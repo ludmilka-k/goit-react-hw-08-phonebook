@@ -67,7 +67,7 @@ const authSlice = createSlice({
           state.isLoading = true;
           state.error = null;
       })
-      .addCase(logoutUserThunk.fulfilled, (state, action) => {
+      .addCase(logoutUserThunk.fulfilled, (state) => {
           state.isLoading = false;
           state.userData = null;
           state.token = null;
