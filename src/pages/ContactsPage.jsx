@@ -4,7 +4,8 @@ import { ContactForm } from '../components/ContactForm';
 import { ContactList } from '../components/ContactList';
 import { Filter } from '../components/Filter';
 import {Section} from '../components/Section'
-import { selectIsLoading, selectError, fetchContactsThunk} from '../redux';
+import { fetchContactsThunk } from '../redux/contacts/operations';
+import {selectIsLoading, selectError } from '../redux/contacts/selectors';
 
 export const ContactsPage = () => {
   const isLoading = useSelector(selectIsLoading);

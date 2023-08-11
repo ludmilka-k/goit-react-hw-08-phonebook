@@ -56,7 +56,7 @@ const contactsSlice = createSlice({
         state.error = action.payload;
       })
 });
-
+export const { addContactThunk, deleteContactThunk } = contactsSlice.actions;
 export const contactsReducer = contactsSlice.reducer;
 
 
