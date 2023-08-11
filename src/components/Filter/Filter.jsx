@@ -10,20 +10,18 @@ export const Filter = () => {
 		const stringifyValue = event.target.value.toLowerCase();
 		dispatch(filterByName(stringifyValue));
 	};
-	return (
-		<>
-			<FilterForm >
-				<Label>
-					Find contact by name
-					<Input
-						type="text"
-						value={filter}
-						onChange={onFilterChange}
-						placeholder="Search by name"
-					/>
-				</Label>
-			</FilterForm>
-		</>
+return (
+		<FilterForm >
+			<Label>
+				Find contact by name
+				<Input
+					type="text"
+					value={filter}
+					onChange={onFilterChange}
+					placeholder="Search by name"
+				/>
+			</Label>
+		</FilterForm>
 	)
 }
 
