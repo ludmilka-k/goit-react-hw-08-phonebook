@@ -1,14 +1,11 @@
 import styled from '@emotion/styled';
 
 export const Form = styled.form`
+  width: 320px;
+  margin: 12px auto;
   display: flex;
   flex-direction: column;
-  width: 320px;
-  padding: 12px;
-  //background-color: rgba(0, 0, 0, 0.6);
-  border: 3px solid #ccc;
-  border-radius: 4px;
-  margin: 0 auto;
+  gap: 12px;
 `;
 
 export const Label = styled.label`
@@ -30,7 +27,7 @@ export const Input = styled.input`
   cursor: pointer;
 `;
 
-export const ButtonLogIn = styled.button`
+export const ButtonSignUp = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;

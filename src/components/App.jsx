@@ -18,13 +18,15 @@ export const App = () => {
   const dispatch = useDispatch();
   const token = useSelector(selectToken);
   const isLoggedIn = useSelector(selectIsLoggedIn);
-  const  isRefreshing  = useSelector(selectIsRefreshing);
+  const isRefreshing  = useSelector(selectIsRefreshing);
 
   useEffect(() => {
+    console.log(token)
+    console.log(dispatch)
     if (!token || isLoggedIn) return;
 
     dispatch(refreshUserThunk());
-  }, [token, dispatch, isLoggedIn]);
+  }, [token, dispatch]);
 
   return isRefreshing ? (<Loader />) : (
     <Routes>

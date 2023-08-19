@@ -1,12 +1,12 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { loginUserThunk } from '../../redux/auth/operations';
 import { Form, Label, Input, ButtonLogIn } from './LoginForm.styled';
-import { selectIsLoggedIn } from 'redux/auth/selectors';
-import { Navigation } from '../Navigation';
+// import { selectIsLoggedIn } from 'redux/auth/selectors';
+// import { Navigation } from '../Navigation';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
-  const isLoggedIn = useSelector(selectIsLoggedIn);
+  // const isLoggedIn = useSelector(selectIsLoggedIn);
 
   const handleSubmit = event => {
     event.preventDefault();

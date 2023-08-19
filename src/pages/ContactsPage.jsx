@@ -7,7 +7,7 @@ import {Section} from '../components/Section'
 import { fetchContactsThunk } from '../redux/contacts/operations';
 import {selectIsLoading, selectError } from '../redux/contacts/selectors';
 
-export const ContactsPage = () => {
+const ContactsPage = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const dispatch = useDispatch();
@@ -28,3 +28,5 @@ export const ContactsPage = () => {
     </>
   );
 };
+
+export default ContactsPage;

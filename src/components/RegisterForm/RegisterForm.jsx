@@ -1,12 +1,12 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { registerUserThunk } from '../../redux/auth/operations';
-import { Form, Label, Input, ButtonLogIn } from './RegisterForm.styled';
-import { selectIsLoggedIn } from 'redux/auth/selectors';
-import { Navigation } from '../Navigation';
+import { Form, Label, Input, ButtonSignUp } from './RegisterForm.styled';
+// import { selectIsLoggedIn } from 'redux/auth/selectors';
+// import { Navigation } from '../Navigation';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
-  const isLoggedIn = useSelector(selectIsLoggedIn);
+  // const isLoggedIn = useSelector(selectIsLoggedIn);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -57,7 +57,7 @@ export const RegisterForm = () => {
           required
         />
       </Label>
-      <ButtonLogIn type="submit">Log In</ButtonLogIn>
+      <ButtonSignUp type="submit">Sign Up</ButtonSignUp>
     </Form>
   );
 };

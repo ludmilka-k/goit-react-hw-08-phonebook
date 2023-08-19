@@ -1,10 +1,12 @@
 import { RegisterForm } from '../components/RegisterForm';
 import { Section } from '../components/Section';
 
-export const RegisterPage = () => {
+const RegisterPage = () => {
   return (
-    <Section title={">Registration"} >
+    <Section title={"Registration"} >
       <RegisterForm />
     </Section>
   );
 };
+
+export default RegisterPage;

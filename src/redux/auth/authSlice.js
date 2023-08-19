@@ -47,14 +47,16 @@ const authSlice = createSlice({
       })
       // REFRESH
       .addCase(refreshUserThunk.pending, state => {
+        console.log("refreshUserThunk.pending")
           state.isLoading = true;
           state.error = null;
           state.isRefreshing = true;
       })
       .addCase(refreshUserThunk.fulfilled, (state, action) => {
+        console.log("refreshUserThunk.fulfilled")
           state.isLoading = false;
           state.userData = action.payload;
-          state.isLoggedIn= true;
+          state.isLoggedIn = true;
           state.isRefreshing = false;
       })
       .addCase(refreshUserThunk.rejected, (state, action) => {

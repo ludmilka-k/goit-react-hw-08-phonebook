@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 
 export const Text = styled.p`
   font-weight: 700;
-  color: #f08080;
+  color: ${props => props.theme.colors.blue};
   font-size: 20px;
 `;
 

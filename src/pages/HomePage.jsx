@@ -1,11 +1,13 @@
 import { Section } from '../components/Section';
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <Section title={"Welcome to PhoneBook"} >
-      <span role="img" aria-label="Greeting icon">
-          💁‍
-        </span>
+      {/*<span role="img" aria-label="Greeting icon">*/}
+      {/*    💁‍*/}
+      {/*  </span>*/}
     </Section>
   );
 };
+
+export default HomePage;

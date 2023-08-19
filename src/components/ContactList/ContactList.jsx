@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from 'react-redux';
 import { selectError, selectFilteredContacts, selectIsLoading } from '../../redux/contacts/selectors';
-import { deleteContactThunk } from '../../redux/contacts/contactsSlice';
+import { deleteContactThunk } from '../../redux/contacts/operations';
 import  { RiUserUnfollowFill } from 'react-icons/ri'
 import { iconSize } from '../../constants';
 import {List, Item, Delete, ContactName, ContactNumber} from './ContactList.styled';
