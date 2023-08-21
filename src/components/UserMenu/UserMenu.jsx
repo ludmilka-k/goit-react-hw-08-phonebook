@@ -11,7 +11,7 @@ export const UserMenu = () => {
   const userName = userData ? userData.name : "";
   return (
     <Wrapper>
-      <Text>Welcome to Phonebook {userName} </Text>
+      <Text>Welcome {userName} </Text>
       <ButtonLogOut type="button" onClick={() => dispatch(logoutUserThunk())}>
         Logout
       </ButtonLogOut>

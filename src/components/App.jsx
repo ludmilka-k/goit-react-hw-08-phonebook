@@ -26,7 +26,7 @@ export const App = () => {
     if (!token || isLoggedIn) return;
 
     dispatch(refreshUserThunk());
-  }, [token, dispatch]);
+  }, [token, dispatch, isLoggedIn]);
 
   return isRefreshing ? (<Loader />) : (
     <Routes>
@@ -51,7 +51,6 @@ export const App = () => {
           }
         />
       </Route>
-      <Route path="*" element={<HomePage />} />
     </Routes>
   );
 };

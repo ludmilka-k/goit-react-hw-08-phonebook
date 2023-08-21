@@ -9,7 +9,7 @@ export const StyledNavLink = styled(NavLink)`
   color: ${props =>props.theme.colors.primaryText};
   border: ${props => ` 1px solid ${props.theme.colors.grey}`};
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 16px;
 
   &:hover {
     color: ${props =>props.theme.colors.blue};

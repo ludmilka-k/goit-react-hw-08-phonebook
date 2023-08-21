@@ -11,12 +11,12 @@ export const StyledNavLink = styled(NavLink)`
   padding: 12px;
   font-weight: 700;
   color: ${props =>props.theme.colors.primaryText};
-  border: ${props => ` 2px solid ${props.theme.colors.grey}`};
+  border: ${props => ` 1px solid ${props.theme.colors.grey}`};
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 16px;
 
   &:hover {
     color: ${props =>props.theme.colors.blue};
-    border: ${props => ` 2px solid ${props.theme.colors.blue}`};
+    border: ${props => ` 1px solid ${props.theme.colors.blue}`};
   }
 `
