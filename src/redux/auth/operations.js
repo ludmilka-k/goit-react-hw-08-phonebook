@@ -30,7 +30,7 @@ export const loginUserThunk = createAsyncThunk(
   'auth/login',
   async (userData, thunkApi) => {
     try {
-      const { data }= await $instance.post('/user/login', userData);
+      const { data }= await $instance.post('/users/login', userData);
       setToken(data.token);
       return data;
     } catch (error) {
