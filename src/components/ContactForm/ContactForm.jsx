@@ -56,13 +56,13 @@ export const ContactForm = () => {
       <Label>
         <InputContainer>
           <InputForm
-            type='text'
-            name='name'
+            type="text"
+            name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash, and spaces. For example: Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
             value={name}
-            placeholder='Enter contact name'
+            placeholder="Enter contact name"
             onChange={handleChangeName} />
           <RiUserFill style={{ position: 'absolute', top: '50%', left: '8px', transform: 'translateY(-50%)' }} />
         </InputContainer>
@@ -71,20 +71,20 @@ export const ContactForm = () => {
       <Label>
         <InputContainer>
           <InputForm
-            type='tel'
-            name='number'
-            pattern='\+?\d{1,4}?[\-.\s]?\(?\d{1,3}?\)?[\-.\s]?\d{1,4}[\-.\s]?\d{1,4}[\-.\s]?\d{1,9}'
-            title='Phone number must be digits and can contain spaces, dashes, parentheses and can start with +'
+            type="tel"
+            name="number"
+            pattern="^\+?\d{1,4}?[\-.\s]?\(?\d{1,3}?\)?[\-.\s]?\d{1,4}[\-.\s]?\d{1,4}[\-.\s]?\d{1,9}$"
+            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
             value={number}
-            placeholder='Enter phone number'
+            placeholder="Enter phone number"
             onChange={handleChangeNumber} />
           <RiPhoneFill style={{ position: 'absolute', top: '50%', left: '8px', transform: 'translateY(-50%)' }} />
         </InputContainer>
         Number
       </Label>
 
-      <ButtonAdd type='submit'>
+      <ButtonAdd type="submit">
         <RiUserAddFill />
         Add contact
       </ButtonAdd>
