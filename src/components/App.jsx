@@ -21,8 +21,6 @@ export const App = () => {
   const isRefreshing  = useSelector(selectIsRefreshing);
 
   useEffect(() => {
-    console.log(token)
-    console.log(dispatch)
     if (!token || isLoggedIn) return;
 
     dispatch(refreshUserThunk());

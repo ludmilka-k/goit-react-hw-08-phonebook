@@ -6,7 +6,6 @@ import { Wrapper, Text, ButtonLogOut } from './UserMenu.styled';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
-  console.log("reading UserData")
   const userData = useSelector(selectUserData);
   const userName = userData ? userData.name : "";
   return (
